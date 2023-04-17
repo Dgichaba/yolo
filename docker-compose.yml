@@ -6,7 +6,7 @@ services:
     build:
       context: backend/
       dockerfile: Dockerfile
-    image: yolo_backend:latest
+    image: yolo_backend:1.0.2
     ports:
       - 5000:5000
     depends_on: 
@@ -34,7 +34,7 @@ services:
     build:
       context: client/
       dockerfile: Dockerfile
-    image: yolo_client:latest
+    image: yolo_client:1.0.2
     ports:
       - 3000:3000
     stdin_open: true
