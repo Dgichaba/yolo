@@ -18,6 +18,9 @@ I used mongo which is the only available image for Mongo Database.
 ## NETWORKING
 I configured networks to ensure the containers communicate with each other.
 
+## VOLUMES
+Implemented volumes for data persistence
+
 ## GIT WORKFLOW
 * Cloned the repository to my local repository
 * Created a repository on my github account and added it as my remote repository
@@ -33,5 +36,6 @@ I named all the images and containers to enable easy identification.
 * docker-compose up --build
 * Access App on http://localhost:3000
 
+Application successfully running.
 ## LINK TO DOCKERHUB
 [Link to Docker-Hub](https://hub.docker.com/search?q=dgichaba)
