@@ -1,15 +1,19 @@
-FROM  node:13.12.0-alpine as backend
+FROM node:18-alpine 
 
 RUN mkdir /app
 
 WORKDIR /app
 
-COPY package * .json ./
+COPY package*.json ./
 
 RUN npm install
 
-COPY . /app/
+COPY . .
 
-EXPOSE 5000
+RUN npm run 
 
-CMD ["npm" , "start"]
+WORKDIR /app 
+
+EXPOSE 3000
+
+CMD [ "npm" , "start" ]

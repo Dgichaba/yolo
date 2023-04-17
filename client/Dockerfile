@@ -1,4 +1,4 @@
-FROM node:18-alpine as build
+FROM node:18-alpine 
 
 RUN mkdir /app
 
@@ -10,13 +10,7 @@ RUN npm install
 
 COPY . .
 
-RUN npm run build
-
-RUN npm install -g serve 
-
-FROM gcr.io/distroless/nodejs18-debian11 
-
-COPY --from=build /app /app 
+RUN npm run 
 
 WORKDIR /app 
 
